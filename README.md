@@ -2,7 +2,7 @@
 
 Just some three.js demos.
 
-Demos will be separated into three categories: basic, intermeidate and advanced.
+Demos will be separated into three categories: basic, intermediate and advanced.
 
 I will add more when I'm still interested in three.js. :)
 
