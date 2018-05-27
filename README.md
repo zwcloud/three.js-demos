@@ -6,6 +6,8 @@ Demos will be separated into three categories: basic, intermediate and advanced.
 
 I will add more when I'm still interested in three.js. :)
 
+Note: I do not care about old browser such as IE, so I will use ES6+ for ease of coding when I think it is appropriate.
+
 # Run
 
 1. Install [node.js](https://nodejs.org).
