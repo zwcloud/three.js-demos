@@ -19,8 +19,6 @@ function init() {
     renderer.shadowMap.enabled = true;
     document.body.appendChild( renderer.domElement );
 
-    // #region scene 3D objects
-
     //ambient
     scene.add(new THREE.AmbientLight(0x404040));
 
