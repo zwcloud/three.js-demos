@@ -13,10 +13,7 @@ function init() {
 
     //renderer
     var renderer = new THREE.WebGLRenderer();
-    renderer.gammaFactor = 2.0;
-    renderer.gammaOutput = true;
     renderer.setSize(window.innerWidth, window.innerHeight);
-    renderer.shadowMap.enabled = true;
     document.body.appendChild( renderer.domElement );
 
     //orbit control
@@ -89,12 +86,9 @@ function init() {
 
     function render() {
         requestAnimationFrame(render);
-
         orbit.update();
-
         renderer.render(scene, camera);
     }
-
     render();
 
 }
