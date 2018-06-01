@@ -5,9 +5,9 @@ function init() {
 
     //camera
     var camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 10000);
-    camera.position.z = 20;
-    camera.position.x = 20;
-    camera.position.y = 20;
+    camera.position.z = 50;
+    camera.position.x = 50;
+    camera.position.y = 50;
     camera.lookAt(new THREE.Vector3(0, 0, 0));
     scene.add(camera);
 
