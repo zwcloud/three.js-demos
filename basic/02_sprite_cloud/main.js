@@ -23,12 +23,13 @@ function init() {
     function randomRange(min, max) {
         return min + (max - min) * Math.random();
     }
+
     /**
      * Creates a single cloud group and adds several cloud layers.
      * Each cloud layer has random position ( x, y, z ), rotation (a)
      * and rotation speed (s).
      * @param params {{clusterRange: Number, minNumber: Number, maxNumber: Number, size: Number}}
-     * @return a THREE.Object3D contains all the cloud sprites.
+     * @return a THREE.Group contains all the cloud sprites.
      */
     function createCloudGroup(params) {
         let clusterRange = params.clusterRange || 0.5;
