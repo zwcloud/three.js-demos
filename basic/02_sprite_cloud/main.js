@@ -60,17 +60,17 @@ function init() {
                 z: z,
                 a: a,
                 s: s,
-                speed: 0.1 * Math.random() * Math.PI / 180
+                speed: 0.003 * Math.random() * Math.PI / 180
             };
             cloudSprite.position.set(x, y, z);
-            cloudSprite.rotateZ(a);
+            cloudMaterial.rotation.a = a;
             cloudSprite.scale.set(s, s, 1);
 
             cloudGroup.add(cloudSprite);
         }
         return cloudGroup;
     }
-    let cloudGroup = createCloudGroup({
+    var cloudGroup = createCloudGroup({
         clusterRange: 0.5,
         minNumber: 15,
         maxNumber: 20,
@@ -87,6 +87,13 @@ function init() {
 
     function render() {
         requestAnimationFrame(render);
+        for (let i = 0; i < cloudGroup.children.length; i++) 
+        {
+            let cloudSprite = cloudGroup.children[i];
+            let rotateSpeed = cloudSprite.data.speed;
+            cloudSprite.material.rotation += rotateSpeed;
+        }   
+        
         orbit.update();
         renderer.render(scene, camera);
     }
