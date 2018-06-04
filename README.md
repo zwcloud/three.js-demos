@@ -23,3 +23,9 @@ npm install -g http-server
 cd XXXX/three.js-demos/basic/01_custom_shader
 http-server ./
 ```
+
+4. Open the demo in a web browser such as Chrome:
+
+```
+http://127.0.0.1:8080
+```
