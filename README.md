@@ -8,6 +8,16 @@ I will add more when I'm still interested in three.js. :)
 
 Note: I do not care about old browser such as IE, so I will use ES6+ for ease of coding when I think it is appropriate.
 
+# Online Demos
+
+**basic**
+* [01_custom_shader](https://zwcloud.github.io/three.js-demos/basic/01_custom_shader/index.html)
+* [02_sprite_cloud](https://zwcloud.github.io/three.js-demos/basic/02_sprite_cloud/index.html)
+
+**intermediate**
+* [01_scan_line_a](https://zwcloud.github.io/three.js-demos/intermediate/01_scan_line_a/index.html)
+* [02_plane_intersection](https://zwcloud.github.io/three.js-demos/intermediate/02_plane_intersection/index.html)
+
 # Run
 
 1. Install [node.js](https://nodejs.org).
